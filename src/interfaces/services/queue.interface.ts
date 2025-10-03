@@ -42,8 +42,8 @@ export interface IGetQueueMetricsResponse {
 }
 
 export interface IReleaseQueueRequest {
-  queue_number: number;
-  counter_id: number;
+  queueNumber: number;  // Ubah dari queue_number
+  counterId: number;    // Ubah dari counter_id
 }
 
 export interface ICurrentQueuesResponse {
@@ -55,7 +55,7 @@ export interface ICurrentQueuesResponse {
 }
 
 export interface INextQueueRequest {
-  counter_id: number;
+  counterId: number;    // Ubah dari counter_id
 }
 
 export interface INextQueueResponse {
@@ -64,7 +64,7 @@ export interface INextQueueResponse {
 }
 
 export interface ISkipQueueRequest {
-  counter_id: number;
+  counterId: number;    // Ubah dari counter_id
 }
 
 export interface ISkipQueueResponse {
@@ -73,7 +73,7 @@ export interface ISkipQueueResponse {
 }
 
 export interface IResetQueuesRequest {
-  counter_id?: number;
+  counterId?: number;   // Ubah dari counter_id
 }
 
 export interface IResetQueuesResponse {

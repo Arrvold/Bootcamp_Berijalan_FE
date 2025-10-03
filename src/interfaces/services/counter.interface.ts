@@ -11,8 +11,8 @@ export interface ICounter {
 
 export interface ICreateCounterRequest {
   name: string;
-  max_queue: number;
-  is_active: boolean;
+  maxQueue: number; // Ubah dari max_queue
+  isActive: boolean; // Ubah dari is_active
 }
 
 export interface IUpdateCounterRequest extends ICreateCounterRequest {
